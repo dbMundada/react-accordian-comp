@@ -1,0 +1,24 @@
+{
+  "name": "react-accordian-component",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-redux": "^7.0.3",
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && rm deployment.zip ; zip -r deployment.zip . -x '*node_modules/*' '.git/*'",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}

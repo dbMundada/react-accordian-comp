@@ -1,0 +1,26 @@
+body {
+  color: #454545;
+  font-family: sans-serif;
+  padding: 0 4%;
+}
+
+button.control-btn {
+  background: #333;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+h1.page-title {
+  border: 1px solid lightgray;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.row {
+  border: 1px solid lightgray;
+  margin: 3px 0;
+  padding: 0px 20px 20px;
+}
