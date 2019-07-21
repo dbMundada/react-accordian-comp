@@ -10,7 +10,7 @@ export const SimpleAccordianExample = () => {
       <h3>Simple/Dummy Accordian</h3>
       <Accordian
         headerContent='Simple/Dummy Accordian'>
-        {DUMMY_TEXT}
+        <span>{DUMMY_TEXT}</span>
       </Accordian>
     </div>
   );
@@ -70,7 +70,7 @@ export const DisabledAccordianExample = () => {
       <Accordian
         disabled={true}
         headerContent='Disabled Accordian'>
-        {DUMMY_TEXT}
+        <span>{DUMMY_TEXT}</span>
       </Accordian>
     </div>
   );
@@ -88,7 +88,7 @@ export const NestedAccordianExample = () => {
             headerContent='Header2'>
             <Accordian
               headerContent='Header3'>
-              {DUMMY_TEXT}
+              <span>{DUMMY_TEXT}</span>
             </Accordian>
           </Accordian>
         </Accordian>
@@ -114,7 +114,7 @@ export class ControllableAccordianExample extends Component {
         <Accordian
           isOpen={controllableAccordian}
           headerContent='Externally Controllable Accordian'>
-          {DUMMY_TEXT}
+          <span>{DUMMY_TEXT}</span>
         </Accordian>
       </div>
     );

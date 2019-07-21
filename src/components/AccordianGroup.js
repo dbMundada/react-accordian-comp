@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Accordian from './Accordian';
 import { isFunction } from '../common/util';
 
@@ -46,5 +47,10 @@ class AccordianGroup extends Component {
     );
   }
 }
+
+AccordianGroup.propTypes = {
+  accordiansList: PropTypes.array,
+  initialOpenAccordian: PropTypes.number
+};
 
 export default AccordianGroup;

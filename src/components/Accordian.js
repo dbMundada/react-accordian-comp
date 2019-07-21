@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../css/Accordian.css';
 import { isFunction } from '../common/util';
 
@@ -51,5 +52,14 @@ class Accordian extends Component {
     );
   }
 }
+
+Accordian.propTypes = {
+  headerContent: PropTypes.string.isRequired,
+  disabled: PropTypes.any,
+  isOpen: PropTypes.any,
+  onAccordianToggle: PropTypes.func,
+  children: PropTypes.element.isRequired
+};
+
 
 export default Accordian;
