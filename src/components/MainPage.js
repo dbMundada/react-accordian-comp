@@ -1,10 +1,10 @@
 import React from 'react';
-import FunnelPanelWrapper from './FunnelComponent';
+import DeploymentDashboard from './DeploymentDashboard';
 
 const MainPage  = () => (
   <div>
-    <h1 className='page-title'>React Funnel Panels</h1>
-    <FunnelPanelWrapper />
+    <h1 className='page-title'>Deployment Dashboard</h1>
+    <DeploymentDashboard />
   </div>
 );
 
